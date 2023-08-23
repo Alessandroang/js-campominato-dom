@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-grid {
+  width: 800px;
+  margin: 30px auto;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Stili per il bottone "AVVIA" */
+#Button-grid {
+  font-size: 18px; /* Imposta la dimensione del testo */
+  padding: 10px 20px; /* Imposta il padding interno */
+  background-color: blue; /* Imposta il colore di sfondo */
+  color: white; /* Imposta il colore del testo */
+  border: none; /* Rimuovi il bordo */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Aggiungi una transizione al colore di sfondo */
+}
+
+#Button-grid:hover {
+  background-color: darkblue; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.cella {
+  width: calc(100% / 10);
+  text-align: center;
+  aspect-ratio: 1;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Stili per diverse difficoltà */
+.facile .cella {
+  width: calc(100% / 10);
+}
+
+.medio .cella {
+  width: calc(100% / 9);
+}
+
+.difficile .cella {
+  width: calc(100% / 7);
+}
